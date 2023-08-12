@@ -1,23 +1,16 @@
 import './App.css'
-import { LiteYoutubeEmbed } from 'react-lite-yt-embed'
+import Mapa from './component/Mapa'
+import Youtube from './component/Youtube'
 
 function App() {
   return (
-    <div className='container'>
-      <LiteYoutubeEmbed
-        id='cQIlwKSAyAc'
-        // defaultPlay={false}
-        // isPlaylist={ true}
-        // noCookie={true}
-        // mute={true}
-        // isMobile={true}
-        // defaultPlay={true}
-        mobileResolution={'hqdefault'}
-        desktopResolution={'hqdefault'}
-        lazyImage={true}
-        imageAltText='Imagen de prueba'
-        // iframeTitle='Titulo de prueba'
-      />
+    <div className='app'>
+      <div className='container-yt-embed'>
+        <Youtube />
+      </div>
+      <div className='container-map'>
+        <Mapa />
+      </div>
     </div>
   )
 }
