@@ -1,5 +1,6 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
+
 const Mapa = () => {
   return (
     <MapContainer
@@ -13,9 +14,7 @@ const Mapa = () => {
         url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
       />
       <Marker position={[51.505, -0.09]}>
-        <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
-        </Popup>
+        <Popup>Texto que se va a mostrar al hacer click en el marcador</Popup>
       </Marker>
     </MapContainer>
   )
